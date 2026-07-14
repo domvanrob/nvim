@@ -13,32 +13,31 @@ return {
 	config = function(_, opts)
 		require("mason-lspconfig").setup(opts)
 
-		-- vim.diagnostic.config({
-		-- 	virtual_text = {
-		-- 		spacing = 4,
-		-- 		prefix = "●",
-		-- 	},
-		-- 	signs = true,
-		-- 	underline = true,
-		-- 	update_in_insert = false,
-		-- 	severity_sort = true,
-		-- 	float = {
-		-- 		border = "rounded",
-		-- 		source = true,
-		-- 	},
-		-- })
-
 		vim.diagnostic.config({
-			-- update_in_insert = true,
+			virtual_text = {
+				spacing = 4,
+				-- prefix = "●",
+			},
+			signs = true,
+			underline = true,
+			update_in_insert = false,
+			severity_sort = true,
 			float = {
-				focusable = false,
-				style = "minimal",
 				border = "rounded",
-				source = "always",
-				header = "",
-				prefix = "",
+				source = true,
 			},
 		})
+
+		-- vim.diagnostic.config({
+		-- 	float = {
+		-- 		focusable = false,
+		-- 		style = "minimal",
+		-- 		border = "rounded",
+		-- 		source = "always",
+		-- 		header = "",
+		-- 		prefix = "",
+		-- 	},
+		-- })
 
 		vim.api.nvim_create_autocmd("LspAttach", {
 			group = vim.api.nvim_create_augroup("UserLspConfig", { clear = true }),
