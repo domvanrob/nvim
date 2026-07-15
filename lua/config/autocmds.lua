@@ -6,3 +6,14 @@
 --
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
+
+-- local function set_win_separator()
+--   vim.api.nvim_set_hl(0, "WinSeparator", { fg = "" })
+-- end
+--
+-- vim.api.nvim_create_autocmd("ColorScheme", {
+--   pattern = "*",
+--   callback = set_win_separator,
+-- })
+--
+-- set_win_separator() -- apply immediately on load too
