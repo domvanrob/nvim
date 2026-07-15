@@ -6,3 +6,5 @@
 -- vim.opt.incsearch = true
 
 vim.opt.scrolloff = 8
+
+-- vim.g.snacks_animate = false
