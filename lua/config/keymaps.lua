@@ -35,3 +35,6 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true, desc =
 
 -- Fyler toggle
 vim.keymap.set("n", "<leader>pv", "<cmd>Fyler<cr>", { desc = "Open fyler.nvim" })
+
+-- unmap suspending vim with Ctrl+Z
+vim.keymap.set("n", "<C-z>", "<Nop>")
