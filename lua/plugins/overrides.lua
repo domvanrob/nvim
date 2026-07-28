@@ -23,10 +23,23 @@ return {
     },
   },
   {
+    "folke/snacks.nvim",
+    opts = {
+      picker = {
+        hidden = true,
+        sources = {
+          files = {
+            hidden = true, -- Show hidden/dotfiles
+          },
+        },
+      },
+    },
+  },
+  {
     "nvim-neo-tree/neo-tree.nvim",
     opts = {
       window = {
-        position = "right",
+        -- position = "right",
         width = 40,
         auto_expand_width = true,
       },
@@ -80,5 +93,23 @@ return {
         },
       },
     },
+  },
+  {
+    "stevearc/conform.nvim",
+    opts = {
+      formatters_by_ft = {
+        javascript = { "prettier" },
+        typescript = { "prettier" },
+        json = { "prettier" },
+        css = { "prettier" },
+        html = { "prettier" },
+        markdown = { "prettier" },
+        yaml = { "prettier" },
+      },
+    },
+  },
+  {
+    "akinsho/bufferline.nvim",
+    enabled = false,
   },
 }
