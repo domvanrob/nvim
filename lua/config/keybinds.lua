@@ -15,10 +15,6 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 vim.keymap.set("x", "<leader>p", '"_dP', { desc = "Paste without replacing buffer" })
-
-vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]], { desc = "Yank to system clipboard" })
-vim.keymap.set("n", "<leader>Y", [["+Y]], { desc = "Yank entire line to system clipboard" })
-
 vim.keymap.set({ "n", "v" }, "<leader>d", '"_d', { desc = "Delete into black hole" })
 
 vim.keymap.set(
@@ -27,7 +23,4 @@ vim.keymap.set(
 	[[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
 	{ desc = "Replace current word in file" }
 )
-vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true, desc = "chmod +x the current file" })
-
--- Fyler toggle
-vim.keymap.set("n", "<leader>pv", "<cmd>Fyler<cr>", { desc = "Open fyler.nvim" })
+-- vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true, desc = "chmod +x the current file" })
