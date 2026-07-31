@@ -27,3 +27,8 @@ vim.keymap.set({ "n", "v" }, "<leader>d", '"_d', { desc = "Delete into black hol
 
 -- unmap suspending vim with Ctrl+Z
 vim.keymap.set("n", "<C-z>", "<Nop>")
+
+vim.keymap.del("n", "<C-Up>")
+vim.keymap.del("n", "<C-Down>")
+vim.keymap.del("n", "<C-Left>")
+vim.keymap.del("n", "<C-Right>")
